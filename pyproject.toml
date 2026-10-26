@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orderflow"
+version = "1.0.0"
+description = "Python order management with validated products and JSON catalogs"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "proxejDias"}]
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["python", "oop", "orders", "inventory", "json"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[tool.setuptools.packages.find]
+include = ["orderflow*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
